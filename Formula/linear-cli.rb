@@ -1,26 +1,26 @@
 class LinearCli < Formula
   desc "A fast, no-nonsense CLI for Linear"
   homepage "https://github.com/duailibe/linear-cli"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/duailibe/linear-cli/releases/download/v#{version}/linear_#{version}_darwin_arm64.tar.gz"
-      sha256 "afa8dfa98120e9e42d0c938cd4e818c1ca1057801da1b26d1495df38cb5a1299"
+      sha256 "d854bf82fbbf49cf4efaaff2518e9165fe6d63ca7f4a61ff7321123c470f0c9d"
     else
       url "https://github.com/duailibe/linear-cli/releases/download/v#{version}/linear_#{version}_darwin_amd64.tar.gz"
-      sha256 "26ae7088c2d1d44973341ac1233a9d15689a5b5e0e1a352cb563507507521d9a"
+      sha256 "9da4eb4ac284573a033a89ffaa3a4075383fe8cb9ccc0bd8636af8ec30274748"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/duailibe/linear-cli/releases/download/v#{version}/linear_#{version}_linux_arm64.tar.gz"
-      sha256 "2b3a8762321ee28398efe67807cc61f17d20113817c9b3c995cf70c8f12c6739"
+      sha256 "8809a3a9a8b0de685e60b7034c288bc04a24668f99763db71f962619662c31e3"
     else
       url "https://github.com/duailibe/linear-cli/releases/download/v#{version}/linear_#{version}_linux_amd64.tar.gz"
-      sha256 "b1f14fbd7c55b49e36a0ca3d386b833a82f311b09660158a70bc48eafc096860"
+      sha256 "5b02eac7f15f70b83eb94c5140d6a98b44c007ded26bba3c1c8160b9dfdc0d5a"
     end
   end
 
